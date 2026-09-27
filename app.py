@@ -8,7 +8,7 @@ st.set_page_config(page_title="目标院校数据洞察", page_icon="📊", layo
 FONT = "PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif"
 
 
-@st.cache_data
+
 def load_data():
     path = Path(__file__).parent / "data" / "schools.csv"
     df = pd.read_csv(path)
